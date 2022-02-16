@@ -14,6 +14,8 @@ To achieve this, we use "historical" building tools.
 In this case, gcc 3.2.2 running on x86 Slackware9 with Linux 2.4.20  
 We will end up with a binary file which can be executed on modern Linux systems, in this case **Linux 5.16.1**
 
+The very same effect MIGHT be achievable with specific linker arguments/scripts, although I have NOT verified this.
+
 The following code will copy assembled bytes of function `dummy()` to character array `harmless_str_buf` and execute the destination array as function.  
 
 [Demo with reverse shell](https://youtu.be/zj5z7eB_frk)
