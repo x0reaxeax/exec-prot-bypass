@@ -7,7 +7,7 @@ https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/elf.h#L280
 
 ## Brief
 As it turns out, binary files built on either systems lacking NX or IA32 systems with NX, which do NOT contain the `PT_GNU_STACK` header will be marked with `exec-all`.  
-This allows complete for RWX to/from everywhere in the binary.  
+This allows for complete RWX to/from everywhere in the binary.  
 
 
 To achieve this, we use "historical" building tools.  
